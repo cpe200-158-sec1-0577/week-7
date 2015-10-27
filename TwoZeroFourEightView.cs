@@ -28,6 +28,7 @@ namespace twozerofoureight
         public void Notify(Model m)
         {
             UpdateBoard(((TwoZeroFourEightModel) m).GetBoard());
+            lblScore.Text = Convert.ToString(((TwoZeroFourEightModel)m).Score);
         }
 
         private void UpdateTile(Label l, int i)
@@ -97,5 +98,14 @@ namespace twozerofoureight
             controller.ActionPerformed(TwoZeroFourEightController.DOWN);
         }
 
+        private void lbl00_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl01_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
